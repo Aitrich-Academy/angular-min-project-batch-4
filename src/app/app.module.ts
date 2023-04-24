@@ -10,6 +10,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ChefdetailsComponent } from './chefdetails/chefdetails.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenupageComponent } from './menupage/menupage.component';
+import { OurstoryComponent } from './ourstory/ourstory.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MenupageComponent } from './menupage/menupage.component';
     TestimonialsComponent,
     ChefdetailsComponent,
     FooterComponent,
-    MenupageComponent
+    MenupageComponent,
+    OurstoryComponent
   ],
   imports: [
     BrowserModule,
