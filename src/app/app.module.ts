@@ -11,6 +11,8 @@ import { ChefdetailsComponent } from './chefdetails/chefdetails.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenupageComponent } from './menupage/menupage.component';
 import { OurstoryComponent } from './ourstory/ourstory.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { ContactformComponent } from './contactform/contactform.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { OurstoryComponent } from './ourstory/ourstory.component';
     ChefdetailsComponent,
     FooterComponent,
     MenupageComponent,
-    OurstoryComponent
+    OurstoryComponent,
+    ContactusComponent,
+    ContactformComponent
   ],
   imports: [
     BrowserModule,

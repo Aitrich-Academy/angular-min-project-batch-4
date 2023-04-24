@@ -1,13 +1,17 @@
-.menucolor
-{
-    background-color: #191616;
-}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Lexend');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+
+
 
 .specialmenu{
     background-color: #191616;
     color: white;
-    height: 35rem;
+    height: 107rem;
     font-family: 'Lexend';
 }
 .specialmenu h3{
