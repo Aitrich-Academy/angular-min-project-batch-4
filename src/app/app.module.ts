@@ -13,6 +13,8 @@ import { MenupageComponent } from './menupage/menupage.component';
 import { OurstoryComponent } from './ourstory/ourstory.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ContactformComponent } from './contactform/contactform.component';
+import { FormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ContactformComponent } from './contactform/contactform.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
