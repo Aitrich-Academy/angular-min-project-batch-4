@@ -9,17 +9,17 @@
     <div class="row">
       <div class="col-8">
         <button class="btn btn-danger mx-4">All</button>
-        <button class="btn btn-danger mx-4">Cuisine</button>
-        <button class="btn btn-danger mx-4">Meal</button>
-        <button class="btn btn-danger mx-4">Dietary</button>
+        <button class="btn btn-danger mx-4" (click)="getCategory('cuisine')">Cuisine</button>
+        <button class="btn btn-danger mx-4" (click)="getCategory('meal')">Meal</button>
+        <button class="btn btn-danger mx-4" (click)="getCategory('dietary')">Dietary</button>
       </div>
       <div class="col-4">
-        <form class="d-flex ms-auto search">
-          <input class="form-control center" type="search" placeholder="Search menu, category" aria-label="Search"
-            style="border-radius: 0.3rem 0 0 0.3rem;">
+        <div class="d-flex ms-auto search">
+          <input class="form-control center" type="text" placeholder="Search menu, category" aria-label="Search"
+            style="border-radius: 0.3rem 0 0 0.3rem;" [(ngModel)]="term">
           <button class="btn btn-light" type="submit" style="border-radius: 0 0.3rem 0.3rem 0;"><img
-              src="../../assets/images/Search.svg" alt="" style="color: white;"></button>
-        </form>
+              src="../../assets/images/search.svg" alt="" style="color: white;"></button>
+          </div>
       </div>
     </div>
   </div>
@@ -34,15 +34,20 @@
 
 
 
-      <ng-container *ngFor="let recipe of recipes">
-        <div class="col-md-4 col-sm-4 mt-3">
+      <ng-container *ngFor="let recipe of recipes | filter:term">
+        <div class="col-md-4 col-sm-4 mt-3" *ngIf="recipe.category === category || category === ''">
           <div class="card bg-dark">
             <div class="card-img">
-              <div class="card-img-top"> <img [src]="recipe.image" [ngStyle]="{'height': '15rem', 'width':'25rem'}">
+              <div class="card-img-top"> <img [src]="recipe.image" [ngStyle]="{'height': '15rem', 'width':'27rem'}">
               </div>
             </div>
             <div class="card-body text-white px-5">
-              <h5 class="card-title">{{recipe.name}}</h5>
+              <div class="row">
+                <h5 class="col-9 card-title">{{recipe.name}}</h5>
+                <h6 class="col-3 badge rounded-pill bg-danger">{{recipe.category}}</h6>
+              </div>
+              
+              <h6>{{recipe.description}}....</h6>
               <div class="row">
                 <p class="col-8">
                   <span><img src="assets/images/timer.svg" alt="" width="30rem" height="30rem"></span>
@@ -90,9 +95,8 @@
   </div>
 
 
-
-
-
-
-  <app-footer></app-footer>
 </div>
+
+
+
+<app-footer></app-footer>
