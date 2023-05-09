@@ -15,9 +15,12 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { ContactformComponent } from './contactform/contactform.component';
 import { FormsModule } from '@angular/forms';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+<<<<<<< HEAD
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { FavouritesComponent } from './favourites/favourites.component';
 import { OrderComponent } from './order/order.component';
+=======
+>>>>>>> 1ec5a279729bdc1b3d1894c6fb9cacdf9d63615e
 
 @NgModule({
   declarations: [
@@ -31,10 +34,14 @@ import { OrderComponent } from './order/order.component';
     MenupageComponent,
     OurstoryComponent,
     ContactusComponent,
+<<<<<<< HEAD
     ContactformComponent,
     IngredientsComponent,
     FavouritesComponent,
     OrderComponent
+=======
+    ContactformComponent
+>>>>>>> 1ec5a279729bdc1b3d1894c6fb9cacdf9d63615e
   ],
   imports: [
     BrowserModule,

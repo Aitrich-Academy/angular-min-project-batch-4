@@ -2,7 +2,11 @@
 
 
 
+<<<<<<< HEAD
 <div class="container-fluid py-4 specialmenu ">
+=======
+<div class="container-fluid py-4 specialmenu">
+>>>>>>> 1ec5a279729bdc1b3d1894c6fb9cacdf9d63615e
   <h2 class="text-white text-center">Our Menu</h2>
 
   <div class="container my-5">
@@ -33,6 +37,7 @@
     <div class="row">
 
 
+<<<<<<< HEAD
 <!--*ngFor="let student of this._studentService.students"-->
       <ng-container *ngFor="let recipe of this._menuService.recipes | filter:term">
         <div class="col-md-4 col-sm-4 mt-3" *ngIf="recipe.category === category || category === ''">
@@ -45,6 +50,14 @@
                         <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                       </svg>
                  </button>
+=======
+
+      <ng-container *ngFor="let recipe of recipes | filter:term">
+        <div class="col-md-4 col-sm-4 mt-3" *ngIf="recipe.category === category || category === ''">
+          <div class="card bg-dark">
+            <div class="card-img">
+              <div class="card-img-top"> <img [src]="recipe.image" [ngStyle]="{'height': '15rem', 'width':'27rem'}">
+>>>>>>> 1ec5a279729bdc1b3d1894c6fb9cacdf9d63615e
               </div>
             </div>
             <div class="card-body text-white px-5">
@@ -57,7 +70,11 @@
               <div class="row">
                 <p class="col-8">
                   <span><img src="assets/images/timer.svg" alt="" width="30rem" height="30rem"></span>
+<<<<<<< HEAD
                   <span class="mx-3">30 Mins</span>
+=======
+                  <span class="mx-3">10 Mins</span>
+>>>>>>> 1ec5a279729bdc1b3d1894c6fb9cacdf9d63615e
                 </p>
                 <p class="col-4">${{recipe.price}}</p>
               </div>
@@ -92,7 +109,11 @@
                 </p>
                 <a href="#" class="btn btn-danger col-4 ">Order Now</a>
               </div>
+<<<<<<< HEAD
               <a class="btn btn-danger" [routerLink]="['/ingredients',recipe.id]">read more</a>
+=======
+              <a class="btn btn-danger">read more</a>
+>>>>>>> 1ec5a279729bdc1b3d1894c6fb9cacdf9d63615e
             </div>
           </div>
         </div>
