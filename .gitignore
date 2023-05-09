@@ -102,3 +102,41 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Node.js dependencies
+node_modules/
+
+# Compiled output
+dist/
+
+# Logs
+logs/
+*.log
+
+# IDE files
+.idea/
+.vscode/
+
+# Compiled TypeScript
+*.js
+*.js.map
+
+# Compiled CSS
+*.css
+*.css.map
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+
+.angular/cache/15.2.6/angular-webpack/ab003b58988ae50fcc9d9f1e43e2a03402b68737/9.pack
+.angular/cache/15.2.6/angular-webpack/90d553fad03d7b6ee0ba2e8e6a564f7c7754cc39/5.pack
+
+refs/
+
+.angular/cache/
